@@ -1,4 +1,4 @@
 - hosts: all
   tasks:
   - debug:
-      var: ansible_facts["ansible_default_ipv4"]|type_debu
+      var: ansible_facts["ansible_default_ipv4"]|type_debug
