@@ -1,8 +1,4 @@
 - hosts: all
   tasks:
   - debug:
-      var: ansible_facts["all_ipv4_addresses"]|type_debug
-  - debug:
-      var: ansible_facts["memory_mb"]|type_debug
-  - debug:
-      var: ansible_facts["machine"]|type_debug
+      var: ansible_facts["ansible_default_ipv4"]|type_debu
