@@ -1,6 +1,5 @@
 - name: Ensure user bob is present
-  hosts: answin01
-  win_user:
+    win_user:
     name: bob
     password: B0bP4ssw0rd
     state: present
