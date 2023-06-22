@@ -1,6 +1,7 @@
 ---
+hosts:all
 - name: Create multiple local users
-    vars_files:
+  vars_files:
     - users_vars.yml
   tasks:
   - name: Add webadmin group
