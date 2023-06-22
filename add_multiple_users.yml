@@ -1,0 +1,15 @@
+-  Script to add users
+---
+- name: Create multiple local users
+    vars_files:
+    - users_vars.yml
+  tasks:
+  - name: Add webadmin group
+    group:
+      name: webadmin
+      state: present
+   - name: Create user accounts
+    user:
+      name: "{{ item.username }}"
+      groups: "{{ item.groups }}"
+    loop: "{{ users }}"
