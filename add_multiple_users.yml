@@ -8,7 +8,7 @@
       name: webadmin
       state: present
   - name: Create user accounts
-    user:
+    win_user:
       name: "{{ item.username }}"
       groups: "{{ item.groups }}"
     loop: "{{ users }}"
