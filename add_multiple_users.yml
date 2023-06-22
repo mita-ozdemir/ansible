@@ -1,4 +1,3 @@
--  Script to add users
 ---
 - name: Create multiple local users
     vars_files:
