@@ -1,6 +1,6 @@
 ---
-hosts:all
 - name: Create multiple local users
+  hosts:all
   vars_files:
     - users_vars.yml
   tasks:
